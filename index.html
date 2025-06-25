@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('about')">About Me & Profile</a></li>
+      <li><a href="#" onclick="showSection('education')">Education</a></li>
+      <li><a href="#" onclick="showSection('experience')">Experience & Skills</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="active">
+    <header>
+      <h1>MY RESUME</h1>
+      <img src="picture .jpg" alt="Profile Picture" class="profile-img" />
+      <h1>FAHMIRUL FIRDAUS BIN KAMAL ARIFFIN</h1>
+      <p>Student ID: 2024267124</p>
+      <p>Group: CDIM2602A</p>
+      <p>Course Code: IML470</p>
+      <p>Faculty Information Science</p>
+    </header>
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p>I am 21 years old. I came from Kuala Lipis, Pahang. I am a student of UiTM Rembau and currently pursuing a degree in Library Management. I have a passion for reading and learning new things.</p>
+
+    <h2>PROFILE</h2>
+    <p>I am a passionate and dedicated individual in the field of library and information science. I enjoy helping people access the information they need and take pride in organizing resources efficiently. I am constantly learning and improving my skills in cataloging, reference services and managing digital collections. I believe that libraries play a vital role in education and community development and I am committed to contributing to that mission by providing quality information services and creating a welcoming environment for all users.</p>
+  </section>
+
+  <section id="education">
+    <h2>EDUCATION BACKGROUND</h2>
+    <ul class="education-list">
+      <li><img src="sk bukit piatu.jpeg" alt="logo"> 2011-2012: Sekolah Kebangsaan Bukit Piatu, Bentong</li>
+      <li><img src="Sekolah_Kebangsaan_Tanjung_Besar.jpg" alt="logo"> 2013-2016: Sekolah Kebangsaan Tanjung Besar, Kuala Lipis</li>
+      <li><img src="smka lipis.jpeg" alt="logo"> 2017-2021: Sekolah Menengah Kebangsaan Agama Kuala Lipis</li>
+      <li><img src="Sekolah_Menengah_Kebangsaan_Seri_Lipis.jpg" alt="logo"> 2022-2024: Sekolah Menengah Kebangsaan Seri Lipis (TINGKATAN ENAM)</li>
+      <li><img src="UITM logo.jpeg" alt="UiTM logo"> 2024-2027: Bachelor of Information Science (Library Management), UiTM</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>WORK EXPERIENCE</h2>
+    <h3>BASKBEAR COFFEE, BENTONG, PAHANG</h3>
+    <ul>
+      <li>During my time working at Baskbear Coffee, I served as a Barista where I gained hands on experience in a fast paced 
+          food and beverage environment. My responsibilities included preparing and serving a variety of coffee based drinks,
+          maintaining cleanliness and hygiene standards, handling customer transactions and delivering excellent customer service.
+          I also learned how to operate commercial coffee equipment and manage inventory efficiently. This experience enhanced my 
+          communication skills, time management and ability to work as part of a dynamic team. It also taught me the importance of 
+          consistency, quality control and building positive customer experiences which are all vital in the service industry.</li>
+      
+    </ul>
+    <img src="baskbear cctv.jpg" alt="Baskbear" class="work-img">
+
+    <h2>SKILLS</h2>
+    <ul>
+      <li>Strong communication and interpersonal skills.</li>
+      <li>Able to handle customer complaints professionally.</li>
+      <li>Skilled in creating a welcoming and friendly environment.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT ME</h2>
+    <ul>
+      <li>Email: fahmirulfirdaus00@gmail.com</a></li>
+      <li><a href="https://wa.me/60142125473" style="color: white ;">WhatsApp: 0142125473</a></li>
+      <li><a href="https://www.instagram.com/pahmi.pidaus" style="color: white ;">Instagram: pahmi.pidaus</a></li>
+    </ul>
+    <h3>THANK YOU ^>^</h3>
+  </section>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => section.classList.remove("active"))
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
